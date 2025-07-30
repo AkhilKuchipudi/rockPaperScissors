@@ -1,0 +1,61 @@
+:root {
+  /* Primary Project Color */
+  --primary-color: #3B82F6;
+  --main-background-color: #ffffff;
+
+  --primary-gray-color: #808080;
+  --primary-color-dim-gray: #4c4c4c;
+  --primary-color-dark-gray: #333;
+  --medium-light-gray: #aeaeae;
+  --light-gray: #ccc;
+  --very-light-gray: #f8f8f8;
+  --primary-blue-color: #1377c5;
+  --primary-hover-blue-color: #0a68b1;
+  --primary-red-color: #ff0000;
+  --primary-white-color: #fff;
+  --primary-black-color: #000;
+  --primary-subtle-black-color: #111;
+  --light-subtle-black-color: #171717;
+  --primary-yellow-color: #ffbe01;
+
+
+  /* --- Header Styles --- */
+  --top-header-background-color: #f5f5f5;
+  --top-header-social-icons-gray: #808080; //gray
+
+  /* --- Services we offer--- */
+  --red-orange-color: #f44027;
+
+  /* --- Get an appointment--- */
+  --appointment-submit-button: #539e22;
+  --appointment-submit-button-hover: #46871e;
+
+  --linkedin-background-color: #0077b5;
+  --facebook-background-color: #3b5998;
+
+  /* --- Contactus page--- */
+  // Contact Container
+  --contact-container-title-gray: #313131;
+
+  // Services
+  --purchase-basic-button-red-color: #eb768c;
+  --purchase-basic-button-blue-color: #31aae2;
+  --purchase-basic-button-lightblue-color: #73c8b7;
+
+  // product Details
+  --color4-bg-color: #ff6bec;
+  --color5-bg-color: #2fffee;
+  --color6-bg-color: #c2ac9b;
+}
+
+// @media (prefers-color-scheme: dark) {
+
+// }
+
+// body.light-theme-override {
+
+// }
+
+// body.dark-theme-override {
+
+// }

@@ -1,0 +1,85 @@
+.mainContainer {
+    background-color: #000;
+    min-height: 100vh;
+    max-height: fit-content;
+
+    /* Disable tap highlight on mobile (Android, Safari) */
+    -webkit-tap-highlight-color: transparent;
+
+    /* Disable focus outlines (keyboard/mouse clicks) */
+    outline: none;
+
+    /* Prevent text selection (desktop + mobile) */
+    // -ms-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+
+    /* Disable pointer highlighting (optional) */
+    caret-color: transparent;
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+        height: 60px;
+        margin: 0 2rem;
+
+        .logoBlock {}
+
+        .navigationBar {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            position: relative;
+
+            .navItem {
+                color: white;
+                cursor: pointer;
+                font-weight: 500;
+            }
+
+            .moreMenu {
+                display: none;
+                position: relative;
+
+                .moreButton {
+                    color: white;
+                    cursor: pointer;
+                    font-weight: 500;
+                }
+
+                .moreDropdown {
+                    display: none;
+                    position: absolute;
+                    top: 100%;
+                    left: 0;
+                    background-color: #1f1f1f;
+                    padding: 0.5rem;
+                    border-radius: 0.5rem;
+                    z-index: 100;
+
+                    .navItem {
+                        display: block;
+                        padding: 0.5rem 1rem;
+                        white-space: nowrap;
+
+                        &:hover {
+                            background-color: #333;
+                        }
+                    }
+                }
+
+                &:hover .moreDropdown {
+                    display: block;
+                }
+            }
+
+            .hideOnMobile {
+                display: flex;
+            }
+        }
+
+        .accountBlock {}
+    }
+}
