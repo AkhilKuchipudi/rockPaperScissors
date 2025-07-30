@@ -1,0 +1,30 @@
+<div class="mainContainer">
+  <div class="header">
+    <div class="logoBlock">Logo Block</div>
+
+    <div class="navigationBar">
+      <!-- Always visible -->
+      <span class="navItem">Home</span>
+
+      <!-- Visible on mobile only -->
+      <div class="moreMenu">
+        <span class="moreButton">More ▾</span>
+        <div class="moreDropdown">
+          <span class="navItem">Support Us</span>
+          <span class="navItem">Features</span>
+          <span class="navItem">About Us</span>
+        </div>
+      </div>
+
+      <!-- Visible on desktop only -->
+      <span class="navItem hideOnMobile">Support Us</span>
+      <span class="navItem hideOnMobile">Features</span>
+      <span class="navItem hideOnMobile">About Us</span>
+    </div>
+
+    <div class="accountBlock">My Account</div>
+  </div>
+
+  <router-outlet></router-outlet>
+
+</div>

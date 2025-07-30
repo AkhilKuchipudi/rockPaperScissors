@@ -1,0 +1,38 @@
+<div class="roomContainer">
+    <div class="tableHeader">
+        <ul>
+            <li (click)="selectTab('Create')" [class.active]="activeTab === 'Create'">Create</li>
+            <li (click)="selectTab('Join')" [class.active]="activeTab === 'Join'">Join</li>
+        </ul>
+    </div>
+
+    <div class="tableBottom">
+        <div *ngIf="activeTab === 'Create'">
+            <p>Click the "Create" button to generate a unique code. Share this code with your friend so they can join.
+            </p>
+            <div class="d-flex justify-content-center align-items-center">
+                <button>Create</button>
+            </div>
+        </div>
+        <div *ngIf="activeTab === 'Join'">
+            <p>Enter the code provided by your friend to join the room.</p>
+
+            <div class="d-flex justify-content-center align-items-center">
+                <p-toast />
+                <div class="card flex justify-center">
+                    <form [formGroup]="exampleForm" (ngSubmit)="onSubmit()" class="flex flex-col gap-4">
+                        <div class="flex flex-col gap-1">
+                            <p-inputotp formControlName="value" [invalid]="isInvalid('value')" />
+                            @if (isInvalid('value')) {
+                            <p-message class="d-flex justify-content-center mt-1" severity="error" size="small" variant="simple">Passcode is required.</p-message>
+                            }
+                        </div>
+                        <div class="d-flex align-items-center justify-content-center mt-3">
+                            <button pButton severity="secondary" type="submit"><span pButtonLabel>Submit</span></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
