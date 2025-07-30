@@ -41,13 +41,15 @@ import { MessageService } from 'primeng/api'; // <--- Add this import
 import { Home } from './Components/home/home';
 import { Game } from './Components/game/game';
 import { Room } from './Components/room/room';
+import { Login } from './Components/login/login';
 
 @NgModule({
   declarations: [
     App,
     Home,
     Game,
-    Room
+    Room,
+    Login
   ],
   imports: [
     BrowserModule,
